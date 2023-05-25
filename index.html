@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Template portafolio desarrollador UI/UX " />
+    <title>Portfolio Profesional - CyberMarketplace</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/primeflex@^3/primeflex.css">
+    <link rel="stylesheet" href="https://unpkg.com/primeflex/themes/saga-blue.css">
+    <script src="https://kit.fontawesome.com/b3f17f1dac.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="flex w-full fixed top-0 z-1">
+        <nav class="flex justify-content-between w-full navbar">
+            <span class="logo cursor-pointer" onclick="scrollToSection('home')">
+                <img src="./assets/Logo.png" alt="Logo portafolio" width="50" height="50">
+            </span>
+            <input type="checkbox" aria-label="Checkbox para mostrar y quitar hamburger menu"
+                class="checkbox xl:hidden">
+            <div class="hamburger__lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <div class="header__info flex align-items-center gap-3">
+                <ul class="flex flex-column xl:flex-row list-none">
+                    <li onclick="scrollToSection('about')">Acerca de</li>
+                    <li onclick="scrollToSection('services')">Servicios</li>
+                    <li onclick="scrollToSection('portfolio')">Portafolio</li>
+                    <li onclick="scrollToSection('contact')">Contacto</li>
+                </ul>
+                <div class="hireMe__button pt-4">
+                    <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                        class="cursor-pointer no-underline border-round-lg text-xl xl:text-sm">Contratame</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HOME PAGE -->
+    <div class="container">
+        <section id="home"
+            class="home__page flex align-items-center justify-content-center xl\:justify-content-between grid grid-nogutter gap-4">
+            <div class="left__content col-12 xl:col-6">
+                <div class="message__bubble triangle mb-4 md:mb-2">
+                    <div class="message__text p-2 sm:p-3 text-center">
+                        <p>Hola, Yo soy</p>
+                    </div>
+                </div>
+                <h1 class="text-3xl sm:text-5xl md:text-7xl">CyberMarketplace</h1>
+                <p class="text-gray-500">
+                    Profesional en desarrollo web y hackers seguridad cibernetica
+                </p>
+                <div class="home__buttons flex align-items-center gap-2 mt-6">
+                    <a href="./assets/CURRICULUM.pdf" aria-label="Descargar curriculum"
+                        class="cursor-pointer border-round-lg no-underline" download>Descargar CV</a>
+                    <button onclick="scrollToSection('portfolio')" aria-label="Deslizar a sección portafolio para mostrar mis trabajos"
+                        class="cursor-pointer border-round-lg">Mi trabajo</button>
+                </div>
+            </div>
+            <div class="right__content col-9 sm:col-6 xl:col-5">
+                <img src="./assets/foto-perfil.png" alt="Foto perfil" width="100" height="100">
+            </div>
+        </section>
+        <!--ABOUT ME-->
+        <section id="about" class="about__me w-full min-h-screen flex align-items-center">
+            <div class="aboutMe__content min-h-full flex flex-column md:flex-row pt-8 md:pt-0">
+                <div class="aboutMe__info col-12 md:col-6 md:pr-6 pt-0">
+                    <h1 class="text-3xl md:text-5xl">about</h1>
+                    <p class="text-gray-500">Bienvenido a CyberMarketplace
+                        Everything you need to know about CyberMarketplace, the #1 authority on Hacking, Social Engineering & Web Development & Cybersecurity & Security...?</p>
+                    <div class="knowledge flex flex-column gap-3 mt-5">
+                        <p>Cybersecurity 300%</p>
+                        <div class="progress__bar progress__wordpress">
+                            <span></span>
+                        </div>
+                        <p>Hacking ético 200%</p>
+                        <div class="progress__bar progress__html">
+                            <span></span>
+                        </div>
+                        <p>Desarrollo web 90%</p>
+                        <div class="progress__bar progress__angular">
+                            <span></span>
+                        </div>
+                        <p>Hacking Redes Sociales 100%</p>
+                        <div class="progress__bar progress__reactJs">
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="hireMe__button pt-4">
+                        <a href="mailTo:mitnicksecurity@protonmail.com" aria-label="Enviar mensaje al correo"
+                            class="cursor-pointer no-underline border-round-lg">Contratame</a>
+                    </div>
+
+                </div>
+                <div class="image col p-0 mt-6 md:mt-0">
+                    <img src="./assets/freelancer.jpg" alt="Foto relacionado a acerca de mí" width="100" height="100">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--FREE LANCER SECTION -->
+    <section class="freelancer mb-4 mt-4 min-w-full flex flex-column justify-content-center align-items-center">
+        <p class="text-sm">Tienes un proyecto en mente?</p>
+        <h1 class="text-center">Estoy disponible como freelancer</h1>
+        <div class="hireMe__button pt-4">
+            <a href="mailTo:john@email.com" aria-label="Enviar mensaje al correo"
+                class="cursor-pointer no-underline border-round-lg">Escríbeme</a>
+        </div>
+    </section>
+    <!--SERVICES -->
+    <div class="container">
+        <section id="services" class="services min-h-full w-full pb-7">
+            <div class="services__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis Servicios.</h1>
+                <p class="text-gray-400 text-sm md:text-base"> 
+                    CyberMarketplace is the leader in training and cybersecurity solutions for companies..
+                </p>
+            </div>
+            <div class="services__card w-full grid grid-nogutter mt-7 gap-5">
+                <div class="card flex align-items-center col-12 sm:col-6 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Hacking Social</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-android"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Hacking Android</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-3 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fas fa-file-alt pagina-icono"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Hacking Web</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Hacking Whatsapp</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col-6 md:col-4 lg:col-4 gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Google Hacking</p>
+                    </div>
+                </div>
+                <div class="card flex align-items-center col-12 sm:col md:col-4 lg:col gap-3 p-2">
+                    <div class="service__logo flex align-items-center justify-content-center ">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="service__name">
+                        <p>Desarrollo web</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--PORTFOLIO -->
+        <section id="portfolio" class="portfolio min-h-full w-full pb-8 pt-8">
+            <div class="portfolio__title flex flex-column gap-3 text-center">
+                <h1 class="text-3xl md:text-5xl">Mis trabajo y Proyectos</h1>
+                <p class="text-gray-400 text-sm md:text-base">
+                    hacking ético pentesting, o prueba de penetración, ciberseguridad, 
+                </p>
+            </div>
+            <div class="portfolio__gallery">
+                <div class="gallery__categories mb-5 mt-5">
+                    <ul class="flex list-none flex-wrap justify-content-center gap-3">
+                        <li class="filter-item active" data-filter="all">Todos</li>
+                        <li class="filter-item " data-filter="gym">Hacking Whatsapp</li>
+                        <li class="filter-item " data-filter="tours__Web">Hacking Web</li>
+                        <li class="filter-item " data-filter="world__Tours">Hacking Redes Sociales</li>
+                        <li class="filter-item " data-filter="e__commerce">Desarrollo web</li>
+                    </ul>
+                </div>
+                <div class="proyect__gallery flex justify-content-center align-items-center flex-wrap gap-3">
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-1.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Phishing en redes sociales</h2>
+                            <p>phishing de forma fácil y rápida Hacking cualquier red social
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card e__commerce">
+                        <img src="./assets/proyecto-2.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Hacking Android</h2>
+                            <p>El hackeo de teléfonos es cualquier método en el que alguien obtiene por la fuerza el acceso a tu teléfono o a tus comunicaciones. Esto puede variar desde avanzadas brechas de seguridad hasta simplemente escuchas en conexiones de Internet no seguras.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-3.png" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Hacking Web</h2>
+                            <p>Pentesting sobre aplicaciones web. Evaluar, detectar y mitigar vulnerabilidades. Vulnerabilidades más comunes y errores de los desarrolladores.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card gym">
+                        <img src="./assets/proyecto-4.jpeg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Hacking Whatsapp</h2>
+                            <p>-Cómo evitar que te roben la cuenta de WhatsApp - Cómo evitar que te espíen los mensajes de WhatsApp - Cómo mejorar la privacidad y seguridad con WhatsApp .
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card world__Tours">
+                        <img src="./assets/proyecto-5.jpg" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Desarrollo web</h2>
+                            <p>El desarrollo web es un proceso complejo que implica la creación de productos digitales en línea. También es un término que define la creación de sitios web para Internet o una intranet.
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                    <div class="project__card tours__Web">
+                        <img src="./assets/proyecto-6.webp" alt="">
+                        <div class="overlay"></div>
+                        <div
+                            class="project__info flex w-full flex-column justify-content-center align-items-center text-center">
+                            <h2>Google Hacking</h2>
+                            <p>Google Hacking es una técnica en informática que utiliza operadores para filtrar información en el buscador de Google. Además podemos encontrar otras aplicaciones de agujeros de seguridad en la configuración y el código informático que se utilizan en las páginas web. 
+                            </p>
+                            <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER -->
+        <footer id="contact" class="min-h-full w-full flex grid col-12 justify-content-center pb-8 pt-8 lg:text-center">
+            <div class="social__media col-12 md:col-4 flex flex-column justify-content-between">
+                <h3>Redes sociales</h3>
+                <p>Auténtico e innovador</p>
+                <p>Desarrollo lo que necesitas, con un enfoque en usabilidad y rendimiento</p>
+                <div class="social__mediaIcons mt-5 flex lg:justify-content-center gap-3">
+                    <a href="https://www.facebook.com/Fr13nds07860376" target="_blank" aria-label="Ir a facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/Fr13nds07860376" target="_blank" aria-label="Ir a instagram">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Fr13nds07860376/" target="_blank" aria-label="Ir a linkedin">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="contact col-12 sm:col-6 sm:pt-0 md:pt-2 md:col-4 flex flex-column justify-content-between md:align-items-center">
+                <h3>Contacto</h3>
+                <div class="phone__number flex align-items-center gap-2">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>+573186740489</p>
+                </div>
+                <div class="email flex align-items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>mitnicksecurity@protonmail.com</p>
+                </div>
+                <a href="mailTo:mitnicksecurity@protonmail.com"
+                    class="cursor-pointer text-center col-4 sm:col-6 xl:col-4 mt-3 no-underline border-round-lg">
+                    <span>
+                        <i class="fa-solid fa-message"></i>
+                    </span>Escríbeme
+                </a>
+            </div>
+            <div class="my__services col-12 sm:col-6 sm:p-0 md:col-4 md:pt-2 md:align-items-center flex flex-column justify-content-between">
+                <h3>Mis Servicios</h3>
+                <p>Desarrollo web</p>
+                <p>Hacking Redes Sociales</p>
+                <p>Hacking Web</p>
+                <P>Hacking Etico</P>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<script>
+    const filterContainer = document.querySelector(".gallery__categories");
+    const galleryItems = document.querySelectorAll(".project__card");
+
+    filterContainer.addEventListener("click", (event) => {
+        if (event.target.classList.contains("filter-item")) {
+            filterContainer.querySelector(".active").classList.remove("active");
+            event.target.classList.add("active")
+            const filterValue = event.target.getAttribute("data-filter")
+            galleryItems.forEach(item => {
+                if (item.classList.contains(filterValue) || filterValue === "all") {
+                    item.classList.remove("hide")
+                    item.classList.add("show")
+                } else {
+                    item.classList.remove("show")
+                    item.classList.add("hide")
+                }
+            })
+        }
+    })
+
+    function scrollToSection(sectionId){
+        document.getElementById(sectionId).scrollIntoView({behavior:"smooth"})
+    }
+</script>
+
+</html>
